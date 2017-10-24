@@ -15,12 +15,12 @@ public class sampleplug extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if (action.equals("toastMessage")) {
-			String name = args.getString(0);
-            String message = "Hello, " + name;
-			callbackContext.success(message);
-            return true;
+		//String name = args.getString(0);
+            	String message = "Hello, world!";
+		callbackContext.success(message);
+        	return true;
         } else {
-			return false;
-		}
+		return false;
+	}
     }
 }
